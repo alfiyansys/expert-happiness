@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ping -c 1 -W2 8.8.8.8;
+
+if [ "$?" -eq 0 ];
+then
+	echo "ok";
+else
+	echo "fail";
+fi
